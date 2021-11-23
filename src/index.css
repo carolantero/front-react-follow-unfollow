@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: #456392;
+}
+
+.App{
+    display: flex;
+    gap: 10px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mulish', sans-serif;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 23px 50px 39px 50px;
+
+    min-width: 302px;
+    min-height: 410px
+
+}
+
+.card img{
+    border-radius: 50%;
+    width: 142px;
+    height: 151px;
+
+    border:12px solid #d1d5db;
+    
+    margin-bottom: 39px;
+}
+
+.card h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #131E30;
+
+    margin-bottom: 8px;
+}
+
+.card span.username{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    text-align: center;
+
+    color: #131E30;
+
+    margin-bottom: 69px;
+}
+
+.card span.status{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.banner button.btn{
+    all: unset;
+    color: rgba(239, 245, 255, 1);
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+
+    margin-top: 18px;
+}
+
+.banner button.follow{
+    background: #459275;
+    padding: 20px 120px;
+}
+
+.banner button.unfollow{
+    background: rgba(151, 206, 185, 1);
+    padding: 20px 104px;
 }
